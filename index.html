@@ -580,15 +580,99 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label class="footer-form-label">
+            <span class="footer-form-inner">Subscribe</span>
+            <div class="footer-form-group">
+              <input
+                class="footer-form-input"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button class="footer-form-btn btn" type="submit">
+                Subscribe
+                <svg class="footer-form-icon" width="24" height="24">
+                  <use href="./images/icons/icons.svg#icon-frame"></use>
+                </svg>
+              </button>
+            </div>
+          </label>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-btn" type="button">
           <svg class="modal-icon" width="8px" height="8px">
-            <use href="./images/icons/icons.svg#close"></use>
+            <use href="./images/icons/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="order-form">
+          <p class="order-form-text text">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="order-form-label">
+            <div class="order-form-group">
+              <span class="order-form-inner">Name</span>
+              <input
+                class="order-form-input"
+                type="text"
+                name="name"
+                placeholder=" "
+              />
+              <svg class="order-form-icon" width="18" height="18">
+                <use href="./images/icons/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="order-form-label">
+            <div class="order-form-group">
+              <span class="order-form-inner">Phone</span>
+              <input
+                class="order-form-input"
+                type="tel"
+                name="phone"
+                placeholder=" "
+              />
+              <svg class="order-form-icon" width="18" height="18">
+                <use href="./images/icons/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="order-form-label">
+            <div class="order-form-group">
+              <span class="order-form-inner">Email</span>
+              <input
+                class="order-form-input"
+                type="email"
+                name="email"
+                placeholder=" "
+              />
+              <svg class="order-form-icon" width="18" height="18">
+                <use href="./images/icons/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="order-form-label">
+            <span class="order-form-inner">Comment</span>
+            <textarea
+              class="order-form-comment"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            >
+            </textarea>
+          </label>
+          <label class="order-form-agreement">
+            <input class="order-form-checkbox" type="checkbox" />
+            <span class="order-form-desk">
+              I accept the terms and conditions of
+              <a class="order-form-link" href="">the Privacy Policy</a>
+            </span>
+          </label>
+          <button class="order-form-btn btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
